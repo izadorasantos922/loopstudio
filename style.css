@@ -50,7 +50,42 @@ header{
 .nav a:hover{
     border-bottom: 2px solid #fff;
 }
-
+/* navbar mobile*/
+.menu{
+    display: none;
+}
+.close-menu{
+    position: absolute;
+    top: 4%;
+    right: 11%;
+}
+.active{
+    display:block
+}
+.nav-mobile.active{
+    display:block;
+}
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    height: 100vh;
+    width: 200px;
+    padding: 2rem;
+}
+.nav-mobile  ul li:first-child{
+    margin-top:2rem;
+}
+.nav-mobile  ul li{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nav-mobile  li {                                     
+    display: block;
+}
+/* termino navbar mobile*/
 .description img{
     height: 400px;
 }
@@ -152,10 +187,14 @@ footer{
     body{
         width: 100%;
     }
+    .menu{
+        display: block;
+    }
     .nav{
         display: none;
     }
     .brand-nav{
+        align-items: center;
         justify-content: space-between;
     }
     header{
